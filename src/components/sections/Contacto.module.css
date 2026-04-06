@@ -1,0 +1,20 @@
+.section { background:var(--bg-gray); }
+.grid { display:grid; grid-template-columns:1fr 1.3fr; gap:4rem; align-items:start; }
+.info { background:var(--card-dark); border-radius:var(--radius); border:1px solid rgba(255,255,255,.06); padding:2.5rem 2rem; box-shadow:0 6px 32px rgba(0,0,0,.18); }
+.label { font-family:var(--font-mono); font-size:.67rem; color:var(--neon); letter-spacing:.22em; text-transform:uppercase; margin-bottom:1rem; display:flex; align-items:center; gap:1rem; }
+.label::after { content:""; flex:1; max-width:80px; height:1px; background:linear-gradient(90deg,var(--neon),transparent); }
+.h2 { font-family:var(--font-display); font-size:clamp(2rem,4vw,3.2rem); color:#fff; line-height:.94; margin-bottom:1rem; }
+.p { font-size:.88rem; color:var(--text-muted-d); line-height:1.85; margin-bottom:2rem; }
+.details { display:flex; flex-direction:column; gap:1rem; }
+.row { display:flex; gap:1rem; font-family:var(--font-mono); font-size:.72rem; }
+.k { color:var(--neon); min-width:70px; } .v { color:var(--text-muted-d); }
+.formCard { background:#fff; border-radius:var(--radius); border:1px solid var(--border-light); padding:2.5rem 2rem; box-shadow:0 4px 20px rgba(0,0,0,.06); }
+.fg { margin-bottom:1.1rem; }
+.fl { display:block; font-family:var(--font-mono); font-size:.63rem; color:var(--text-muted); letter-spacing:.15em; text-transform:uppercase; margin-bottom:.45rem; }
+.fi,.fta { width:100%; padding:.8rem 1rem; background:var(--bg-gray); border:1.5px solid var(--border-light); color:var(--text-dark); border-radius:var(--radius-sm); outline:none; transition:border-color .25s,background .25s; }
+.fi:focus,.fta:focus { border-color:var(--neon); background:#fff; }
+.fta { resize:vertical; }
+.fi::placeholder,.fta::placeholder { color:var(--text-muted); }
+.submit { width:100%; padding:.95rem; background:var(--neon); border:none; color:#0a0a0f; font-family:var(--font-mono); font-size:.72rem; font-weight:700; letter-spacing:.18em; text-transform:uppercase; cursor:none; border-radius:var(--radius-sm); transition:opacity .2s,transform .2s; margin-top:.25rem; }
+.submit:hover { opacity:.88; transform:translateY(-1px); }
+@media (max-width:900px) { .grid { grid-template-columns:1fr; } }

@@ -1,0 +1,1 @@
+.tag { font-family:var(--font-mono); font-size:.6rem; letter-spacing:.1em; text-transform:uppercase; padding:.18rem .5rem; border:1px solid rgba(255,255,255,.1); color:var(--text-muted-d); border-radius:3px; background:rgba(255,255,255,.03); white-space:nowrap; }

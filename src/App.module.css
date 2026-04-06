@@ -1,0 +1,3 @@
+.layout { margin-left: var(--sidebar-w); min-height: 100vh; display: flex; flex-direction: column; }
+.main { flex: 1; }
+@media (max-width: 900px) { .layout { margin-left: 0; } }

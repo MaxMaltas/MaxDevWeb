@@ -1,0 +1,9 @@
+.section { background:var(--bg-gray); position:relative; }
+.section::before { content:""; position:absolute; inset:0; background-image:radial-gradient(circle,rgba(0,204,122,.05) 1px,transparent 1px); background-size:32px 32px; pointer-events:none; }
+.label { font-family:var(--font-mono); font-size:.67rem; color:var(--neon); letter-spacing:.22em; text-transform:uppercase; margin-bottom:1rem; display:flex; align-items:center; gap:1rem; }
+.label::after { content:""; flex:1; max-width:80px; height:1px; background:linear-gradient(90deg,var(--neon),transparent); }
+.grid { display:grid; grid-template-columns:repeat(12,1fr); gap:1.25rem; }
+.all { margin-top:2.5rem; text-align:center; }
+.allLink { font-family:var(--font-mono); font-size:.72rem; color:var(--neon); letter-spacing:.14em; text-transform:uppercase; transition:opacity .2s; }
+.allLink:hover { opacity:.7; }
+@media (max-width:900px) { .grid { grid-template-columns:1fr; } }

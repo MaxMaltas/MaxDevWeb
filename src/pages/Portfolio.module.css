@@ -1,0 +1,6 @@
+.page { background:var(--bg-gray); min-height:100vh; }
+.label { font-family:var(--font-mono); font-size:.67rem; color:var(--neon); letter-spacing:.22em; text-transform:uppercase; margin-bottom:1rem; display:flex; align-items:center; gap:1rem; }
+.label::after { content:""; flex:1; max-width:80px; height:1px; background:linear-gradient(90deg,var(--neon),transparent); }
+.title { font-family:var(--font-display); font-size:clamp(2.6rem,5vw,4.5rem); color:var(--text-dark); margin-bottom:1rem; }
+.grid { display:grid; grid-template-columns:repeat(12,1fr); gap:1.25rem; }
+@media (max-width:900px) { .grid { grid-template-columns:1fr; } }

@@ -17,7 +17,7 @@ const BAR = { neon:"linear-gradient(90deg,var(--neon),var(--cyan))", cyan:"linea
 const LINK_COL = { neon:"var(--neon)", cyan:"var(--cyan)", purple:"var(--purple)", gold:"var(--gold)" }
 
 export default function ProjectCard({ project, className="" }) {
-  const { slug, title, category, description, tags, gradient, accent, size } = project
+  const { slug, title, category, description, tags, gradient, accent, size, github } = project
   return (
     <article className={`${styles.card} ${styles[size]} ${className}`}>
       <div className={styles.img}>
@@ -30,7 +30,13 @@ export default function ProjectCard({ project, className="" }) {
         <h3 className={styles.title}>{title}</h3>
         <p className={styles.desc}>{description}</p>
         <div className={styles.tags}>{tags.map(t=><span key={t} className={styles.tag}>{t}</span>)}</div>
-        <Link to={`/portfolio/${slug}`} className={styles.link} style={{color:LINK_COL[accent]}}>Ver proyecto</Link>
+        <div className={styles.actions}>
+          {github && (
+            <a href={github} target="_blank" rel="noopener noreferrer" className={styles.link} style={{color:LINK_COL[accent]}}>
+              Ver en GitHub
+            </a>
+          )}
+        </div>
       </div>
       <div className={styles.bar} style={{background:BAR[accent]}}/>
     </article>

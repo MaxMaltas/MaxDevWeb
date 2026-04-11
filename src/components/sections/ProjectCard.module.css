@@ -14,7 +14,8 @@
 .desc { font-size:.81rem; color:var(--text-muted-d); line-height:1.65; }
 .tags { display:flex; flex-wrap:wrap; gap:.4rem; margin-top:1rem; }
 .tag  { font-family:var(--font-mono); font-size:.58rem; color:var(--text-muted-d); border:1px solid rgba(255,255,255,.1); padding:.18rem .5rem; border-radius:3px; }
-.link { display:inline-flex; align-items:center; gap:.4rem; margin-top:1rem; font-family:var(--font-mono); font-size:.67rem; letter-spacing:.1em; text-decoration:none; }
+.actions { display:flex; align-items:center; gap:1rem; margin-top:1rem; flex-wrap:wrap; }
+.link { display:inline-flex; align-items:center; gap:.4rem; font-family:var(--font-mono); font-size:.67rem; letter-spacing:.1em; text-decoration:none; }
 .link::after { content:"→"; transition:transform .2s; }
 .link:hover::after { transform:translateX(4px); }
 .bar  { position:absolute; bottom:0; left:0; height:2px; width:0; transition:width .45s ease; }

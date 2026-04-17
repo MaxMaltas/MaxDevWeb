@@ -2,7 +2,7 @@
 
 Portfolio personal + negocio + blog para un profesional de DevOps, Cybersecurity e IA.
 
-## Stack
+## Stack 
 - React 18 + React Router v6
 - Vite 5
 - CSS Modules

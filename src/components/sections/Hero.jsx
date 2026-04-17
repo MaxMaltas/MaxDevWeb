@@ -13,8 +13,8 @@ export default function Hero() {
       <div className={styles.glow1}/><div className={styles.glow2}/>
       <p className={`${styles.eyebrow} fade-up`}>Sistema activo &middot; v2.0.26</p>
       <h1 className={`${styles.title} fade-up fade-up-d1`}>
-        <span className={styles.glitch} data-text="ALEJANDRO">ALEJANDRO</span>
-        <span className={styles.accent}>VERA.</span>
+        <span className={styles.glitch} data-text="MAX">MAX</span>
+        <span className={styles.accent}>MALTAS.</span>
       </h1>
       <p className={`${styles.subtitle} fade-up fade-up-d2`}>
         DevOps Engineer &middot; Cybersecurity &middot; <span className={styles.tw}>{current}</span>

@@ -26,12 +26,12 @@ export default function About() {
               </div>
               <div className={styles.tBody}>
                 <div><span className={styles.cmd}>$ </span>whoami</div>
-                <div><span className={styles.out}>alejandro_vera</span></div><br/>
+                <div><span className={styles.out}>max_maltas</span></div><br/>
                 <div><span className={styles.cmd}>$ </span>cat ./bio.json</div>
                 <div><span className={styles.dim}>{"{"}</span></div>
                 <div>&nbsp; "role": <span className={styles.str}>"Sr. DevOps & Security"</span>,</div>
                 <div>&nbsp; "exp_years": <span className={styles.out}>8</span>,</div>
-                <div>&nbsp; "location": <span className={styles.str}>"Madrid, ES"</span>,</div>
+                <div>&nbsp; "location": <span className={styles.str}>"Barcelona, ES"</span>,</div>
                 <div>&nbsp; "remote": <span className={styles.out}>true</span>,</div>
                 <div>&nbsp; "focus": [<span className={styles.str}>"K8s"</span>, <span className={styles.str}>"AI"</span>, <span className={styles.str}>"ZeroTrust"</span>],</div>
                 <div>&nbsp; "status": <span className={styles.cmd}>"available"</span></div>

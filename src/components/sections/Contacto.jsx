@@ -12,9 +12,12 @@ export default function Contacto() {
             <h2 className={styles.h2}>INICIA UN<br/>PROYECTO.</h2>
             <p className={styles.p}>Abierto a proyectos de consultoría, arquitectura y formación en DevOps &middot; Cybersecurity &middot; AI. Respuesta en menos de 24h.</p>
             <div className={styles.details}>
+              <div className={styles.row}><span className={styles.k}>// nombre</span><span className={styles.v}>Max Maltas</span></div>
               <div className={styles.row}><span className={styles.k}>// mail</span><span className={styles.v}>maltas.max@proton.me</span></div>
               <div className={styles.row}><span className={styles.k}>// tel</span><span className={styles.v}>+34 615 93 39 62</span></div>
-              <div className={styles.row}><span className={styles.k}>// base</span><span className={styles.v}>Barcelona, España · Remote OK</span></div>
+              <div className={styles.row}><span className={styles.k}>// base</span><span className={styles.v}>Barcelona, España</span></div>
+              <div className={styles.row}><span className={styles.k}>// linkedin</span><span className={styles.v}>linkedin.com/in/max-maltas/</span></div>
+              <div className={styles.row}><span className={styles.k}>// github</span><span className={styles.v}>github.com/MaxMaltas</span></div>
               <div className={styles.row}><span className={styles.k}>// horario</span><span className={styles.v}>Lun–Vie 09:00–19:00 CET</span></div>
             </div>
           </div>

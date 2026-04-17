@@ -8,8 +8,8 @@ export const navLinks = [
 ]
 
 export const socialLinks = [
-  { label: "GH", href: "https://github.com/" },
-  { label: "LI", href: "https://linkedin.com/" },
+  { label: "GH", href: "https://github.com/MaxMaltas" },
+  { label: "LI", href: "https://linkedin.com/in/max-maltas/" },
   { label: "TW", href: "https://twitter.com/" },
   { label: "CV", href: "/cv.pdf" },
 ]

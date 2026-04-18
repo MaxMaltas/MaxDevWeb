@@ -1,6 +1,7 @@
 import { services } from "@/data/services"
 import { useScrollFade } from "@/hooks/useScrollFade"
 import styles from "./Servicios.module.css"
+import Catalogo from "@/components/sections/Catalogo"
 
 const ICONS = {
   neon:   <svg viewBox="0 0 22 22" fill="none" stroke="#00CC7A" strokeWidth="1.5"><circle cx="11" cy="11" r="9"/><path d="M7 11 L11 7 L15 11"/><line x1="11" y1="7" x2="11" y2="16"/></svg>,
@@ -29,6 +30,8 @@ export default function Servicios() {
           ))}
         </div>
       </div>
+      <div className="sec-divider"/>
+      <Catalogo />
     </div>
   )
 }

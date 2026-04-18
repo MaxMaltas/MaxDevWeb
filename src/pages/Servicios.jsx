@@ -1,5 +1,6 @@
 import { services } from "@/data/services"
 import { useScrollFade } from "@/hooks/useScrollFade"
+import Catalogo from "@/components/sections/Catalogo"
 import styles from "./Servicios.module.css"
 
 const ICONS = {
@@ -12,23 +13,27 @@ const TOP = { neon:"linear-gradient(90deg,var(--neon),var(--cyan))", cyan:"linea
 export default function Servicios() {
   const ref = useScrollFade()
   return (
-    <div ref={ref} id="top" className={styles.page}>
-      <div className="sec-inner">
-        <p className={`${styles.label} fade-up`}>[02.00] — SERVICIOS</p>
-        <h1 className={`${styles.title} fade-up fade-up-d1`}>ESPECIALIDADES<br/>TÉCNICAS</h1>
-        <p className="sec-intro fade-up fade-up-d2">Consultoría e implementación en las tres disciplinas clave de la infraestructura moderna.</p>
-        <div className={styles.grid}>
-          {services.map((s,i)=>(
-            <div key={s.id} className={`${styles.card} fade-up fade-up-d${i+2}`} style={{"--tg":TOP[s.accent]}}>
-              <p className={styles.idx}>{s.index}</p>
-              <div className={styles.icon}>{ICONS[s.accent]}</div>
-              <h2 className={styles.cardTitle}>{s.title}</h2>
-              <p className={styles.desc}>{s.description}</p>
-              <div className={styles.stack}>{s.stack.map(t=><span key={t} className={styles.tag}>{t}</span>)}</div>
-            </div>
-          ))}
+    <>
+      <div ref={ref} id="top" className={styles.page}>
+        <div className="sec-inner">
+          <p className={`${styles.label} fade-up`}>[02.00] — SERVICIOS</p>
+          <h1 className={`${styles.title} fade-up fade-up-d1`}>ESPECIALIDADES<br/>TÉCNICAS</h1>
+          <p className="sec-intro fade-up fade-up-d2">Consultoría e implementación en las tres disciplinas clave de la infraestructura moderna.</p>
+          <div className={styles.grid}>
+            {services.map((s,i)=>(
+              <div key={s.id} className={`${styles.card} fade-up fade-up-d${i+2}`} style={{"--tg":TOP[s.accent]}}>
+                <p className={styles.idx}>{s.index}</p>
+                <div className={styles.icon}>{ICONS[s.accent]}</div>
+                <h2 className={styles.cardTitle}>{s.title}</h2>
+                <p className={styles.desc}>{s.description}</p>
+                <div className={styles.stack}>{s.stack.map(t=><span key={t} className={styles.tag}>{t}</span>)}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+      <div className="sec-divider"/>
+      <Catalogo />
+    </>
   )
 }

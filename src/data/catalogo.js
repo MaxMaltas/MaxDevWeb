@@ -123,11 +123,18 @@ export const packArranque = {
   precio: "1.100 €",
   precioPost: "+ 150 €/mes desde el mes 4",
   ahorro: "Ahorro 270 €",
+<<<<<<< HEAD
   href: "mailto:maltas.max@proton.me?subject=Pack Arranque Digital",
+=======
+>>>>>>> df9cb90da9c3c9e29fea327f13735b9e13e17ddf
   items: [
     { label: "Servidor autoalojado desde cero", valor: "700 €" },
     { label: "VPN WireGuard para el equipo", valor: "350 €" },
     { label: "3 meses mantenimiento base", valor: "450 €" },
   ],
   totalSinPack: "1.500 €",
+<<<<<<< HEAD
+=======
+  ctaHref: "mailto:maltas.max@proton.me?subject=Pack Arranque Digital",
+>>>>>>> df9cb90da9c3c9e29fea327f13735b9e13e17ddf
 }

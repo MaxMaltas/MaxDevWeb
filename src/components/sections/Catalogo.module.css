@@ -7,7 +7,11 @@
 
 .section { background: var(--bg-gray); }
 
+<<<<<<< HEAD
 /* — Labels de sección — */
+=======
+/* ── Labels de sección ── */
+>>>>>>> df9cb90da9c3c9e29fea327f13735b9e13e17ddf
 .label {
   font-family: var(--font-mono);
   font-size: .67rem;
@@ -52,14 +56,22 @@
   margin-bottom: 1.5rem;
 }
 
+<<<<<<< HEAD
 /* — Grid proyectos — */
+=======
+/* ── Grid proyectos ── */
+>>>>>>> df9cb90da9c3c9e29fea327f13735b9e13e17ddf
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
 }
 
+<<<<<<< HEAD
 /* — Service Card — */
+=======
+/* ── Service Card ── */
+>>>>>>> df9cb90da9c3c9e29fea327f13735b9e13e17ddf
 .card {
   background: var(--card-dark);
   border-radius: var(--radius);
@@ -195,7 +207,11 @@
 }
 .toggleBtn:hover { opacity: .7; }
 
+<<<<<<< HEAD
 /* — Scope detail — */
+=======
+/* ── Scope detail ── */
+>>>>>>> df9cb90da9c3c9e29fea327f13735b9e13e17ddf
 .scope {
   border-top: 1px solid rgba(255,255,255,.06);
   padding-top: 1rem;
@@ -237,7 +253,11 @@
   line-height: 1.5;
 }
 
+<<<<<<< HEAD
 /* — Retainer — */
+=======
+/* ── Retainer ── */
+>>>>>>> df9cb90da9c3c9e29fea327f13735b9e13e17ddf
 .retainerGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -342,7 +362,11 @@
   line-height: 1.5;
 }
 
+<<<<<<< HEAD
 /* — Pack — */
+=======
+/* ── Pack ── */
+>>>>>>> df9cb90da9c3c9e29fea327f13735b9e13e17ddf
 .pack {
   margin-top: 4rem;
   background: var(--card-dark);
@@ -477,7 +501,11 @@
 }
 .packCta:hover { opacity: .88; transform: translateY(-1px); }
 
+<<<<<<< HEAD
 /* — Responsive — */
+=======
+/* ── Responsive ── */
+>>>>>>> df9cb90da9c3c9e29fea327f13735b9e13e17ddf
 @media (max-width: 900px) {
   .grid            { grid-template-columns: 1fr; }
   .retainerGrid    { grid-template-columns: 1fr; }

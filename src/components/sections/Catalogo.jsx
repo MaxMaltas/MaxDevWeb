@@ -96,7 +96,11 @@ function ServiceCard({ s, index }) {
         onClick={() => setOpen(v => !v)}
         style={{ color: accentColor }}
       >
+<<<<<<< HEAD
         {open ? "Ocultar alcance ↑" : "Ver alcance detallado →"}
+=======
+        {open ? "Ocultar alcance ↑" : "Ver alcance detallado ↓"}
+>>>>>>> df9cb90da9c3c9e29fea327f13735b9e13e17ddf
       </button>
 
       {open && (
@@ -134,14 +138,22 @@ export default function Catalogo() {
     <section ref={ref} className={styles.section}>
       <div className="sec-inner">
 
+<<<<<<< HEAD
         {/* — Header — */}
+=======
+        {/* ── Header ── */}
+>>>>>>> df9cb90da9c3c9e29fea327f13735b9e13e17ddf
         <p className={`${styles.label} fade-up`}>[02.01] — CATÁLOGO</p>
         <h2 className="fade-up fade-up-d1">SERVICIOS &amp;<br/>PRECIOS.</h2>
         <p className={`sec-intro fade-up fade-up-d2`}>
           Precios cerrados por proyecto, sin sorpresas. Cada servicio incluye documentación y alcance definido antes de empezar.
         </p>
 
+<<<<<<< HEAD
         {/* — Proyectos únicos — */}
+=======
+        {/* ── Proyectos únicos ── */}
+>>>>>>> df9cb90da9c3c9e29fea327f13735b9e13e17ddf
         <p className={`${styles.sectionLabel} fade-up`}>Proyectos de entrega única</p>
         <div className={styles.grid}>
           {catalogoServicios.map((s, i) => (
@@ -149,7 +161,11 @@ export default function Catalogo() {
           ))}
         </div>
 
+<<<<<<< HEAD
         {/* — Retainer — */}
+=======
+        {/* ── Retainer ── */}
+>>>>>>> df9cb90da9c3c9e29fea327f13735b9e13e17ddf
         <p className={`${styles.sectionLabel} fade-up`} style={{marginTop:"4rem"}}>Mantenimiento mensual</p>
         <p className={`${styles.sectionSub} fade-up fade-up-d1`}>
           Soporte recurrente para empresas sin equipo IT interno. Precio fijo, sin llamadas inesperadas.
@@ -188,7 +204,11 @@ export default function Catalogo() {
           ))}
         </div>
 
+<<<<<<< HEAD
         {/* — Pack — */}
+=======
+        {/* ── Pack ── */}
+>>>>>>> df9cb90da9c3c9e29fea327f13735b9e13e17ddf
         <div className={`${styles.pack} fade-up`}>
           <div className={styles.packLeft}>
             <p className={styles.packBadge}>Pack entrada</p>
@@ -211,7 +231,11 @@ export default function Catalogo() {
             <p className={styles.packSaving}>{packArranque.ahorro}</p>
             <p className={styles.packPrice}>{packArranque.precio}</p>
             <p className={styles.packPriceNote}>{packArranque.precioPost}</p>
+<<<<<<< HEAD
             <a href={packArranque.href} className={styles.packCta}>
+=======
+            <a href={packArranque.ctaHref} className={styles.packCta}>
+>>>>>>> df9cb90da9c3c9e29fea327f13735b9e13e17ddf
               // Solicitar pack →
             </a>
           </div>
